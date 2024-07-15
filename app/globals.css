@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-align-center{
+  @apply flex justify-center items-center;
+}
+
+.label{
+  @apply text-sm leading-8 font-medium;
+}
+.input-box{
+  @apply w-full mb-5 bg-blake-100 rounded-md border px-2 py-2 border-gray-500 text-sm text-[#ccc];
+}
+
+.primary-btn{
+  @apply bg-orange-500 px-2 py-1 border border-orange-300 rounded hover:bg-orange-400 font-medium transition ease-in duration-200;
+}
+.secondary-btn{
+  @apply px-2 py-1 border text-center border-gray-400 rounded hover:border-orange-400 hover:text-orange-400 font-medium transition ease-in duration-200;
+}
+
+.secondary-btn, .or, .signIn-links {
+  @apply w-3/5;
+}
+
+.signIn-links a{
+  @apply block text-center mb-3 text-xs ;
+}
+
+.or {
+  @apply flex items-center ;
+}
+
+.or .bar{
+  @apply flex-1 border-0 h-[1px] bg-slate-100;
+}
+
+.main-footer {
+  @apply pt-16 max-md:pt-8 max-w-[80%] text-xs;
+}
+
+.footer-links {
+  @apply flex justify-center text-orange-500;
+}
+
+  .showcase {
+    @apply bg-[url('/assets/images/background.jpg')] h-screen flex-align-center text-center;  
+  }
+
+  .showcase-content {
+    @apply bg-black/50 h-full w-full flex-align-center flex-col ;
+  }
+
+  .showcase-content .showcase-text {
+    @apply text-3xl mb-4
+  }
+
+ 
